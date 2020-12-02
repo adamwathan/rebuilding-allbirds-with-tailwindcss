@@ -6,17 +6,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'system-ui'],
+        poppins: ['Quicksand', 'Poppins', 'system-ui'],
       },
       colors: {
         lime: colors.lime,
         green: colors.green,
-        gray: colors.trueGray,
+        gray: colors.gray,
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/aspect-ratio')],
 }
